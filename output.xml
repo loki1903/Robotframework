@@ -1,9 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-03-01T18:43:08.616280" rpa="false" schemaversion="5">
-<suite id="s1" name="For" source="E:\Robotframework\TestCase\for.robot">
-<test id="s1-t1" name="tc_for" line="2">
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-03-02T16:58:00.466342" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase" source="E:\Robotframework\TestCase">
+<suite id="s1-s1" name="Alert" source="E:\Robotframework\TestCase\alert.robot">
+<test id="s1-s1-t1" name="alter_test" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:00.653660" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:00.653457" elapsed="8.238046"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:08.892680" elapsed="0.065268"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:08.959975" level="INFO">Clicking element 'id:confirmBtn'.</msg>
+<arg>id:confirmBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:58:08.959201" elapsed="0.252881"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:11.213582" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:09.212627" elapsed="2.001096"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:11.217789" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-03-02T16:58:11.215201" elapsed="0.024831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:13.242409" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:11.241116" elapsed="2.001570"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:58:00.652469" elapsed="12.591157"/>
+</test>
+<status status="PASS" start="2026-03-02T16:58:00.496358" elapsed="12.750644"/>
+</suite>
+<suite id="s1-s2" name="Arguments" source="E:\Robotframework\TestCase\arguments.robot">
+<test id="s1-s2-t1" name="tc_001" line="10">
+<kw name="broser_init" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:13.272325" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com'.</msg>
+<arg>${tc_url}</arg>
+<arg>${tc_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:13.271299" elapsed="2.783013"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:16.054631" elapsed="0.077977"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:16.179906" level="INFO">${title} = Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-02T16:58:16.132928" elapsed="0.047068"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2026-03-02T16:58:16.180137" elapsed="0.000138"/>
+</return>
+<msg time="2026-03-02T16:58:16.180572" level="INFO">${page_title} = Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<var>${page_title}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2026-03-02T16:58:13.268815" elapsed="2.911806"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${page_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:58:16.181287" elapsed="0.002179"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-02T16:58:16.185334" level="INFO">Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<arg>${page_title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-02T16:58:16.184380" elapsed="0.001056"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:58:13.266706" elapsed="2.919207"/>
+</test>
+<status status="PASS" start="2026-03-02T16:58:13.249583" elapsed="2.937373"/>
+</suite>
+<suite id="s1-s3" name="Brower Oper" source="E:\Robotframework\TestCase\brower_oper.robot">
+<test id="s1-s3-t1" name="Tc_001" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:16.193540" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:16.193250" elapsed="1.701437"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:17.895293" elapsed="0.087407"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:18.023952" level="INFO">${loc} = https://www.google.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-02T16:58:17.983514" elapsed="0.040589"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:58:18.024805" elapsed="0.001099"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:20.028155" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:18.026619" elapsed="2.001916"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:20.030125" level="INFO">Opening url 'https://www.flipkart.com'</msg>
+<arg>https://www.flipkart.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:20.029625" elapsed="4.508778"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:24.715650" level="INFO">${loc} = https://www.flipkart.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-02T16:58:24.539054" elapsed="0.176703"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:58:24.716361" elapsed="0.001053"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:26.718731" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:24.717936" elapsed="2.000970"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2026-03-02T16:58:26.719524" elapsed="0.022441"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:26.749121" level="INFO">${loc} = https://www.google.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-02T16:58:26.742400" elapsed="0.006799"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:58:26.749653" elapsed="0.000690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:28.751089" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:26.750614" elapsed="2.000610"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:58:16.192262" elapsed="12.559441"/>
+</test>
+<status status="PASS" start="2026-03-02T16:58:16.188307" elapsed="12.564422"/>
+</suite>
+<suite id="s1-s4" name="Clicks" source="E:\Robotframework\TestCase\clicks.robot">
+<test id="s1-s4-t1" name="Tc_001" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:28.757581" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>https://www.amazon.in/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:28.757218" elapsed="2.738961"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:31.496802" elapsed="0.069276"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:34.573692" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:31.568262" elapsed="3.006078"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://a[@id='nav-logo-sprites']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:58:34.576291" elapsed="0.534475"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:38.112107" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:35.111223" elapsed="3.001090"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:38.113204" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:38.112920" elapsed="6.299706"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:44.413011" elapsed="0.006545"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:44.420191" level="INFO">Double clicking element 'xpath://button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath://button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:58:44.419937" elapsed="0.312514"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:47.734345" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:44.733043" elapsed="3.001421"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:47.735162" level="INFO">Opening url 'https://www.globalsqa.com/demo-site/draganddrop/'</msg>
+<arg>https://www.globalsqa.com/demo-site/draganddrop/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:47.735024" elapsed="4.042906"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:58:51.779042" elapsed="0.015306"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:51.796653" level="INFO">Selecting frame 'class:demo-frame'.</msg>
+<arg>class:demo-frame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-03-02T16:58:51.795672" elapsed="0.112450"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://img[@alt='The chalet at the Green mountain lake']</arg>
+<arg>xpath://div[@id='trash']</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2026-03-02T16:58:51.908546" elapsed="1.022504"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:58:55.933151" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:58:52.932338" elapsed="3.001224"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:58:28.756444" elapsed="27.178635"/>
+</test>
+<status status="PASS" start="2026-03-02T16:58:28.753666" elapsed="27.184621"/>
+</suite>
+<suite id="s1-s5" name="For" source="E:\Robotframework\TestCase\for.robot">
+<test id="s1-s5-t1" name="tc_for" line="2">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2026-03-01T18:43:08.637512" level="INFO">@{list1} = [ 1 | 3 | 6 | 9 | 5 ]</msg>
+<msg time="2026-03-02T16:58:55.947972" level="INFO">@{list1} = [ 1 | 3 | 6 | 9 | 5 ]</msg>
 <var>@{list1}</var>
 <arg>1</arg>
 <arg>3</arg>
@@ -11,84 +260,680 @@
 <arg>9</arg>
 <arg>5</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.637237" elapsed="0.000302"/>
+<status status="PASS" start="2026-03-02T16:58:55.947364" elapsed="0.000666"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.638001" elapsed="0.000296"/>
+<status status="PASS" start="2026-03-02T16:58:55.949466" elapsed="0.001828"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${i}==9</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.638373" elapsed="0.000278"/>
+<status status="PASS" start="2026-03-02T16:58:55.951861" elapsed="0.002010"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-03-01T18:43:08.637940" elapsed="0.000803"/>
+<status status="PASS" start="2026-03-02T16:58:55.949164" elapsed="0.004851"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.638925" elapsed="0.000349"/>
+<status status="PASS" start="2026-03-02T16:58:55.954591" elapsed="0.002639"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${i}==9</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.639350" elapsed="0.000307"/>
+<status status="PASS" start="2026-03-02T16:58:55.957776" elapsed="0.001711"/>
 </kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2026-03-01T18:43:08.638835" elapsed="0.000851"/>
+<status status="PASS" start="2026-03-02T16:58:55.954344" elapsed="0.005334"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.639794" elapsed="0.000253"/>
+<status status="PASS" start="2026-03-02T16:58:55.960504" elapsed="0.002030"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${i}==9</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.640112" elapsed="0.000185"/>
+<status status="PASS" start="2026-03-02T16:58:55.963027" elapsed="0.001525"/>
 </kw>
 <var name="${i}">6</var>
-<status status="PASS" start="2026-03-01T18:43:08.639749" elapsed="0.000570"/>
+<status status="PASS" start="2026-03-02T16:58:55.960147" elapsed="0.004599"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${i}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.640415" elapsed="0.000228"/>
+<status status="PASS" start="2026-03-02T16:58:55.966280" elapsed="0.002085"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2026-03-01T18:43:08.640894" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2026-03-02T16:58:55.971820" level="INFO">Exiting for loop altogether.</msg>
 <arg>${i}==9</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-01T18:43:08.640708" elapsed="0.000241"/>
+<status status="PASS" start="2026-03-02T16:58:55.969493" elapsed="0.002864"/>
 </kw>
 <var name="${i}">9</var>
-<status status="PASS" start="2026-03-01T18:43:08.640371" elapsed="0.000604"/>
+<status status="PASS" start="2026-03-02T16:58:55.965243" elapsed="0.007347"/>
 </iter>
 <var>${i}</var>
 <value>@{list1}</value>
-<status status="PASS" start="2026-03-01T18:43:08.637794" elapsed="0.003202"/>
+<status status="PASS" start="2026-03-02T16:58:55.948567" elapsed="0.024183"/>
 </for>
-<status status="PASS" start="2026-03-01T18:43:08.636758" elapsed="0.004522"/>
+<status status="PASS" start="2026-03-02T16:58:55.946077" elapsed="0.028736"/>
 </test>
-<status status="PASS" start="2026-03-01T18:43:08.617377" elapsed="0.024303"/>
+<status status="PASS" start="2026-03-02T16:58:55.941709" elapsed="0.036179"/>
+</suite>
+<suite id="s1-s6" name="Iframe" source="E:\Robotframework\TestCase\iframe.robot">
+<test id="s1-s6-t1" name="iframe_test" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:58:55.998024" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
+<arg>https://www.letskodeit.com/practice</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:58:55.997291" elapsed="7.432928"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:03.430913" elapsed="0.093099"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:06.525809" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:03.524481" elapsed="3.001579"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:06.527700" level="INFO">Selecting frame 'iframe-name'.</msg>
+<arg>iframe-name</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-03-02T16:59:06.527189" elapsed="0.099087"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:06.627777" level="INFO">Clicking link 'ALL COURSES'.</msg>
+<arg>ALL COURSES</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:06.627301" elapsed="1.229368"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:10.858509" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:07.857268" elapsed="3.001370"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2026-03-02T16:59:10.859014" elapsed="0.002368"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:13.862446" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:10.861634" elapsed="3.000938"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:13.863293" level="INFO">Clicking element 'class:dropbtn'.</msg>
+<arg>class:dropbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:13.863088" elapsed="0.077354"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:58:55.995269" elapsed="17.945768"/>
+</test>
+<status status="PASS" start="2026-03-02T16:58:55.980898" elapsed="17.961143"/>
+</suite>
+<suite id="s1-s7" name="Screenshots" source="E:\Robotframework\TestCase\screenshots.robot">
+<test id="s1-s7-t1" name="Tc_001" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:13.946385" level="INFO">Opening browser 'chrome' to base url 'https://www.orangehrm.com/'.</msg>
+<arg>https://www.orangehrm.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:13.946135" elapsed="15.610642"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:29.558597" elapsed="0.087456"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:29.886302" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/logo.png"&gt;&lt;img src="screenshots/logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath:/html/body/nav/div/a/img</arg>
+<arg>E:/Robotframework/screenshots/logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2026-03-02T16:59:29.646821" elapsed="0.240177"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:30.167740" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/page.png"&gt;&lt;img src="screenshots/page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>E:/Robotframework/screenshots/page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-02T16:59:29.888461" elapsed="0.279524"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:13.945579" elapsed="16.223149"/>
+</test>
+<status status="PASS" start="2026-03-02T16:59:13.943139" elapsed="16.229461"/>
+</suite>
+<suite id="s1-s8" name="Scroll" source="E:\Robotframework\TestCase\scroll.robot">
+<test id="s1-s8-t1" name="tc_001" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:30.185941" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>https://www.amazon.in/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:30.184861" elapsed="1.627933"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:31.813244" elapsed="0.060485"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:34.876607" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:31.874783" elapsed="3.002123"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:34.878779" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-03-02T16:59:34.877805" elapsed="0.036867"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:37.917023" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:34.915713" elapsed="3.001590"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:37.919678" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-03-02T16:59:37.918161" elapsed="0.053743"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T16:59:40.974886" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:37.973181" elapsed="3.001852"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:30.182177" elapsed="10.793280"/>
+</test>
+<status status="PASS" start="2026-03-02T16:59:30.175251" elapsed="10.801092"/>
+</suite>
+<suite id="s1-s9" name="Switch Browser" source="E:\Robotframework\TestCase\switch_browser.robot">
+<test id="s1-s9-t1" name="TC_001" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:40.982425" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:40.982207" elapsed="1.630843"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:42.613679" elapsed="0.101281"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:42.716659" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:42.716094" elapsed="1.606871"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:44.323380" elapsed="0.039490"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:44.363710" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>https://www.flipkart.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:44.363395" elapsed="2.768483"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.132364" elapsed="0.072136"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.206065" elapsed="0.000848"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:47.234043" level="INFO">${title} = Automation Testing Practice</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.207527" elapsed="0.026759"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.243694" elapsed="0.017205"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.264138" elapsed="0.001259"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:47.325773" level="INFO">${title_1} = Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!</msg>
+<var>${title_1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.272950" elapsed="0.053016"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.327274" elapsed="0.001584"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>3</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.329472" elapsed="0.000513"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:47.431402" level="INFO">${title_2} = Google</msg>
+<var>${title_2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.330572" elapsed="0.100914"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title_2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.432112" elapsed="0.004004"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:40.981293" elapsed="6.455790"/>
+</test>
+<status status="PASS" start="2026-03-02T16:59:40.977596" elapsed="6.461576"/>
+</suite>
+<suite id="s1-s10" name="TC1" source="E:\Robotframework\TestCase\TC1.robot">
+<test id="s1-s10-t1" name="LoginTest" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:47.448605" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:47.448212" elapsed="2.527565"/>
+</kw>
+<kw name="loginToApplication">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:49.977870" level="INFO">Clicking link 'class:ico-login'.</msg>
+<arg>class:ico-login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:49.977509" elapsed="1.198163"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:51.176409" level="INFO">Typing text 'abc@gmail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>abc@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:51.176053" elapsed="0.187117"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:51.363732" level="INFO">Typing text 'abc' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>abc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:51.363429" elapsed="0.105007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:51.469300" level="INFO">Clicking element 'xpath://button[contains(@class, 'button-1 search-box-button')]'.</msg>
+<arg>xpath://button[contains(@class, 'button-1 search-box-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:51.468926" elapsed="0.082618"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:49.976906" elapsed="1.574831"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-02T16:59:51.552125" elapsed="2.216421"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:47.447169" elapsed="6.322271"/>
+</test>
+<status status="PASS" start="2026-03-02T16:59:47.441758" elapsed="6.329538"/>
+</suite>
+<suite id="s1-s11" name="TC2" source="E:\Robotframework\TestCase\TC2.robot">
+<test id="s1-s11-t1" name="Login_Test01" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:53.776573" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T16:59:53.776138" elapsed="3.039342"/>
+</kw>
+<kw name="Key_checkvisibility">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T16:59:56.816739" elapsed="0.036816"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:56.916409" level="INFO">Page title is 'nopCommerce demo store. Home page title'.</msg>
+<arg>nopCommerce demo store. Home page title</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-03-02T16:59:56.853816" elapsed="0.062815"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:56.917307" level="INFO">Clicking link 'class:ico-login'.</msg>
+<arg>class:ico-login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:56.916928" elapsed="0.964427"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:57.914231" level="INFO">Element 'id:Email' is displayed.</msg>
+<arg>${email_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-02T16:59:57.881736" elapsed="0.032629"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-02T16:59:57.914572" elapsed="0.033790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-02T16:59:57.949040" level="INFO">Typing text 'abc@gmail.com' into text field 'id:Email'.</msg>
+<arg>${email_txt}</arg>
+<arg>abc@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T16:59:57.948670" elapsed="0.154466"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T17:00:03.104698" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T16:59:58.103432" elapsed="5.001679"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:00:03.105830" elapsed="0.098866"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T17:00:06.205845" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T17:00:03.205040" elapsed="3.001031"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:56.816129" elapsed="9.390136"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-02T17:00:06.206678" elapsed="2.262330"/>
+</kw>
+<status status="PASS" start="2026-03-02T16:59:53.775346" elapsed="14.694463"/>
+</test>
+<status status="PASS" start="2026-03-02T16:59:53.772517" elapsed="14.699364"/>
+</suite>
+<suite id="s1-s12" name="TC closebrowser" source="E:\Robotframework\TestCase\TC_closebrowser.robot">
+<test id="s1-s12-t1" name="TC_browser" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:08.482114" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T17:00:08.481677" elapsed="2.593452"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T17:00:11.077195" elapsed="0.088358"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:11.166625" level="INFO">Opening browser 'chrome' to base url 'https://www.flipkart.com/'.</msg>
+<arg>https://www.flipkart.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T17:00:11.166190" elapsed="5.965264"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-02T17:00:17.131895" elapsed="2.200706"/>
+</kw>
+<status status="PASS" start="2026-03-02T17:00:08.480279" elapsed="10.852878"/>
+</test>
+<status status="PASS" start="2026-03-02T17:00:08.474259" elapsed="10.860303"/>
+</suite>
+<suite id="s1-s13" name="TC Dropdown" source="E:\Robotframework\TestCase\TC_Dropdown.robot">
+<test id="s1-s13-t1" name="Test_case01" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:19.339983" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T17:00:19.339607" elapsed="5.268337"/>
+</kw>
+<kw name="Dropdown_Test">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T17:00:24.609333" elapsed="0.038816"/>
+</kw>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:24.648615" level="INFO">${time} = 5 seconds</msg>
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-03-02T17:00:24.648372" elapsed="0.000288"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-02T17:00:24.648804" elapsed="0.000536"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2026-03-02T17:00:24.649509" elapsed="0.021335"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:35.013594" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-02T17:00:35.013920" level="FAIL">Text 'GUI Elementsdd' did not appear in 10 seconds.</msg>
+<arg>GUI Elementsdd</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2026-03-02T17:00:24.671094" elapsed="10.359567">Text 'GUI Elementsdd' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.031049" elapsed="0.000077"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.031344" elapsed="0.000066"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.031606" elapsed="0.000058"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id:country</arg>
+<arg>germany</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.031893" elapsed="0.000059"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>id:country</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.032258" elapsed="0.000036"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id:colors</arg>
+<arg>Green</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.032461" elapsed="0.000025"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id:colors</arg>
+<arg>Blue</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.032575" elapsed="0.000141"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<arg>id:colors</arg>
+<arg>Green</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.033006" elapsed="0.000069"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<var>${speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.033290" elapsed="0.000059"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.033505" elapsed="0.000057"/>
+</kw>
+<status status="FAIL" start="2026-03-02T17:00:24.608772" elapsed="10.425346">Text 'GUI Elementsdd' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-02T17:00:35.034637" elapsed="0.000101"/>
+</kw>
+<status status="FAIL" start="2026-03-02T17:00:19.338958" elapsed="15.696328">Text 'GUI Elementsdd' did not appear in 10 seconds.</status>
+</test>
+<status status="FAIL" start="2026-03-02T17:00:19.335892" elapsed="15.700515"/>
+</suite>
+<suite id="s1-s14" name="TC radiobutton" source="E:\Robotframework\TestCase\TC_radiobutton.robot">
+<test id="s1-s14-t1" name="Test_Radiobutton" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:35.041101" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T17:00:35.040676" elapsed="4.657657"/>
+</kw>
+<kw name="RadioButton_Test">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T17:00:39.699180" elapsed="0.035112"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-03-02T17:00:39.734862" elapsed="0.000657"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:41.751221" level="INFO">Page title is 'Automation Testing Practice'.</msg>
+<arg>Automation Testing Practice</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-03-02T17:00:39.737824" elapsed="2.013767"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:41.752802" level="INFO">Selecting 'female' from radio button 'gender'.</msg>
+<arg>gender</arg>
+<arg>female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-03-02T17:00:41.752246" elapsed="6.220500"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:47.973222" level="INFO">Selecting checkbox 'sunday'.</msg>
+<arg>sunday</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:00:47.972986" elapsed="8.187240"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:00:56.161277" level="INFO">Unselecting checkbox 'sunday'.</msg>
+<arg>sunday</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:00:56.160746" elapsed="8.174913"/>
+</kw>
+<status status="PASS" start="2026-03-02T17:00:39.698850" elapsed="24.637233"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-02T17:01:04.337247" elapsed="4.175735"/>
+</kw>
+<status status="PASS" start="2026-03-02T17:00:35.039930" elapsed="33.474506"/>
+</test>
+<status status="PASS" start="2026-03-02T17:00:35.037369" elapsed="33.479454"/>
+</suite>
+<suite id="s1-s15" name="Windohandle" source="E:\Robotframework\TestCase\windohandle.robot">
+<test id="s1-s15-t1" name="Tc_001" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:01:08.527208" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<arg>https://demo.automationtesting.in/Windows.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-02T17:01:08.526805" elapsed="4.864085"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-02T17:01:13.391819" elapsed="2.083719"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:01:15.477206" level="INFO">Clicking element 'xpath://*[@id="Tabbed"]/a'.</msg>
+<arg>xpath://*[@id="Tabbed"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:01:15.476653" elapsed="4.244776"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T17:01:22.723016" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T17:01:19.722102" elapsed="3.001045"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title=Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:01:22.723564" elapsed="26.180200"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T17:01:51.906806" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T17:01:48.905121" elapsed="3.001977"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-02T17:01:51.908720" level="INFO">Clicking element 'xpath://*[@id="main_navbar"]/ul/li[3]/a'.</msg>
+<arg>xpath://*[@id="main_navbar"]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-02T17:01:51.908177" elapsed="4.969393"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-02T17:01:59.880507" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-02T17:01:56.878717" elapsed="3.002166"/>
+</kw>
+<status status="PASS" start="2026-03-02T17:01:08.525741" elapsed="51.356205"/>
+</test>
+<status status="PASS" start="2026-03-02T17:01:08.520034" elapsed="51.364220"/>
+</suite>
+<status status="FAIL" start="2026-03-02T16:58:00.467525" elapsed="239.420369"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="14" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="For" id="s1" pass="1" fail="0" skip="0">For</stat>
+<stat name="TestCase" id="s1" pass="14" fail="1" skip="0">TestCase</stat>
+<stat name="Alert" id="s1-s1" pass="1" fail="0" skip="0">TestCase.Alert</stat>
+<stat name="Arguments" id="s1-s2" pass="1" fail="0" skip="0">TestCase.Arguments</stat>
+<stat name="Brower Oper" id="s1-s3" pass="1" fail="0" skip="0">TestCase.Brower Oper</stat>
+<stat name="Clicks" id="s1-s4" pass="1" fail="0" skip="0">TestCase.Clicks</stat>
+<stat name="For" id="s1-s5" pass="1" fail="0" skip="0">TestCase.For</stat>
+<stat name="Iframe" id="s1-s6" pass="1" fail="0" skip="0">TestCase.Iframe</stat>
+<stat name="Screenshots" id="s1-s7" pass="1" fail="0" skip="0">TestCase.Screenshots</stat>
+<stat name="Scroll" id="s1-s8" pass="1" fail="0" skip="0">TestCase.Scroll</stat>
+<stat name="Switch Browser" id="s1-s9" pass="1" fail="0" skip="0">TestCase.Switch Browser</stat>
+<stat name="TC1" id="s1-s10" pass="1" fail="0" skip="0">TestCase.TC1</stat>
+<stat name="TC2" id="s1-s11" pass="1" fail="0" skip="0">TestCase.TC2</stat>
+<stat name="TC closebrowser" id="s1-s12" pass="1" fail="0" skip="0">TestCase.TC closebrowser</stat>
+<stat name="TC Dropdown" id="s1-s13" pass="0" fail="1" skip="0">TestCase.TC Dropdown</stat>
+<stat name="TC radiobutton" id="s1-s14" pass="1" fail="0" skip="0">TestCase.TC radiobutton</stat>
+<stat name="Windohandle" id="s1-s15" pass="1" fail="0" skip="0">TestCase.Windohandle</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-03-02T16:58:13.260776" level="WARN">Error in file 'E:\Robotframework\resources\resources.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
