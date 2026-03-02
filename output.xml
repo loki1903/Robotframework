@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-03-01T18:43:08.616280" rpa="false" schemaversion="5">
+<suite id="s1" name="For" source="E:\Robotframework\TestCase\for.robot">
+<test id="s1-t1" name="tc_for" line="2">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-03-01T18:43:08.637512" level="INFO">@{list1} = [ 1 | 3 | 6 | 9 | 5 ]</msg>
+<var>@{list1}</var>
+<arg>1</arg>
+<arg>3</arg>
+<arg>6</arg>
+<arg>9</arg>
+<arg>5</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.637237" elapsed="0.000302"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.638001" elapsed="0.000296"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==9</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.638373" elapsed="0.000278"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-03-01T18:43:08.637940" elapsed="0.000803"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.638925" elapsed="0.000349"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==9</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.639350" elapsed="0.000307"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2026-03-01T18:43:08.638835" elapsed="0.000851"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.639794" elapsed="0.000253"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==9</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.640112" elapsed="0.000185"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2026-03-01T18:43:08.639749" elapsed="0.000570"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.640415" elapsed="0.000228"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2026-03-01T18:43:08.640894" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i}==9</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2026-03-01T18:43:08.640708" elapsed="0.000241"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2026-03-01T18:43:08.640371" elapsed="0.000604"/>
+</iter>
+<var>${i}</var>
+<value>@{list1}</value>
+<status status="PASS" start="2026-03-01T18:43:08.637794" elapsed="0.003202"/>
+</for>
+<status status="PASS" start="2026-03-01T18:43:08.636758" elapsed="0.004522"/>
+</test>
+<status status="PASS" start="2026-03-01T18:43:08.617377" elapsed="0.024303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="For" id="s1" pass="1" fail="0" skip="0">For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

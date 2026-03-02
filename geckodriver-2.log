@@ -1,0 +1,18 @@
+1772284629988	geckodriver	INFO	Listening on 127.0.0.1:64324
+1772284633102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64325" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\lokes\\AppData\\Local\\Temp\\rust_mozprofile6KTnzB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1772284633373	Marionette	INFO	Marionette enabled
+1772284633465	Marionette	INFO	Listening on port 55205
+WebDriver BiDi listening on ws://127.0.0.1:64325
+Read port: 55205
+1772284633571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: blob:https://vinothqaacademy.com/66c99355-92ec-4552-a992-994652241cf6, line 1: ReferenceError: wp is not defined
+JavaScript error: https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js, line 2: ReferenceError: jQuery is not defined
+JavaScript error: blob:https://vinothqaacademy.com/2d6dc269-0d88-4d84-b0a4-431750b99f89, line 1: ReferenceError: jQuery is not defined
+JavaScript error: data:text/javascript;base64,d3AuaTE4bi5zZXRMb2NhbGVEYXRhKHsndGV4dCBkaXJlY3Rpb25cdTAwMDRsdHInOlsnbHRyJ119KQ==, line 1: ReferenceError: wp is not defined
+1772284660878	Marionette	INFO	Stopped listening on port 55205
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
