@@ -1,1 +1,1 @@
-robot TestCase/
+C:\Users\lokes\PycharmProjects\Robotframework\venv\Scripts\robot.exe TestCase\
